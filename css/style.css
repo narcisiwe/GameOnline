@@ -1,6 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url('/images/wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     margin: 0;
     padding: 0;
 }
@@ -12,13 +15,19 @@ body {
 }
 
 .minimap {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    background-color: #ddd;
     position: absolute;
     top: 20px;
     left: 20px;
+    background-image: url('/images/map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+
 }
 
 .menu-buttons {
@@ -45,11 +54,15 @@ body {
     align-items: center;
 }
 
+.bottom-panel-item {
+    height: 100px; /* Примерная высота, которую вы можете изменить по своему усмотрению */
+}
+
 .inventory,
 .players,
 .chat {
     flex: 1;
-    margin: 0 10px;
+    margin: 0px;
     background-color: #eee;
     padding: 10px;
     border: 1px solid #ccc;
@@ -70,4 +83,40 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-card {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.player-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.player-nickname {
+    margin-top: 5px;
+}
+
+.inventory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.inventory-item {
+    width: 30%; /* Обеспечивает три ячейки на одной строке */
+    height: 50px; /* или любая другая высота, которую вы хотите установить */
+    background-color: #ccc; /* Пример цвета для ячейки */
+    margin-bottom: 10px; /* Промежуток между ячейками */
+    border: 1px solid #999; /* Граница ячейки */
 }

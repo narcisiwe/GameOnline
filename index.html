@@ -11,49 +11,65 @@
 <body>
 
     <div class="container">
-        <!-- Миникарта -->
         <div class="minimap"></div>
 
-        <!-- Кнопки меню -->
         <div class="menu-buttons">
-            <button class="menu-button">Меню1</button>
-            <button class="menu-button">Меню2</button>
-            <button class="menu-button">Меню3</button>
-            <button class="menu-button">Меню4</button>
-            <button class="menu-button">Меню5</button>
+            <button class="menu-button">Аккаунт</button>
+            <button class="menu-button">Друзья</button>
+            <button class="menu-button">Звук</button>
+            <button class="menu-button">Настройки</button>
+            <button class="menu-button">Выход</button>
         </div>
 
-        <!-- Кнопки действий -->
         <div class="action-buttons">
-            <button class="action-button">Действие1</button>
-            <button class="action-button">Действие2</button>
-            <button class="action-button">Действие3</button>
-            <button class="action-button">Действие4</button>
-            <button class="action-button">Действие5</button>
-            <button class="action-button">Действие6</button>
-            <button class="action-button">Действие7</button>
-            <button class="action-button">Действие8</button>
+            <button class="action-button">Атаковать</button>
+            <button class="action-button">Стрелять</button>
+            <button class="action-button">Магия</button>
+            <button class="action-button">Защищать</button>
+            <button class="action-button">Парировать</button>
+            <button class="action-button">Убегать</button>
+            <button class="action-button">Договориться</button>
+            <button class="action-button">Отдохнуть</button>
         </div>
 
-        <!-- Нижнее меню -->
         <div class="bottom-menu">
-            <!-- Инвентарь -->
-            <div class="inventory">
-                Инвентарь
+            <div class="inventory bottom-panel-item">
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
+                <div class="inventory-item"></div>
             </div>
 
-            <!-- Карточки игроков -->
-            <div class="players">
-                Карточки игроков
+            <div class="players bottom-panel-item">
+                <div class="player-card">
+                    <div class="player-nickname">Milfhuner</div>
+                    <img src="images/hero1.jpg" alt="Hero 1" class="player-image">
+                </div>
+                <div class="player-card">
+                    <div class="player-nickname">AllTrue6no</div>
+                    <img src="images/hero2.jpg" alt="Hero 2" class="player-image">
+                </div>
+                <div class="player-card">
+                    <div class="player-nickname">NagibatOOr3000</div>
+                    <img src="images/hero3.jpg" alt="Hero 3" class="player-image">
+                </div>
+                <div class="player-card">
+                    <div class="player-nickname">我是半见町</div>
+                    <img src="images/hero4.jpg" alt="Hero 4" class="player-image">
+                </div>
+                <div class="player-card">
+                    <div class="player-nickname">RealMan2009</div>
+                    <img src="images/hero5.jpg" alt="Hero 5" class="player-image">
+                </div>
             </div>
 
-            <!-- Чат -->
-            <div class="chat">
-                Чат
+            <div class="chat bottom-panel-item">
+                <div id="chatContent"></div>
             </div>
         </div>
     </div>
-
+    <script src="scripts/script.js"></script>
 </body>
-
 </html>
