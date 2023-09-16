@@ -1,13 +1,71 @@
-<!doctype html>
-<html>
-<head>
-  <
-<title>Our Funky HTML Page</title>
-<meta name="description" content="Our first page">
-<meta name="keywords" content="html tutorial template">
-</head>
-<body>
-  <script src="/scripts/script.js"></script>
-Content goes here.
-</body>
-</html>
+/* Reset some default browser styles */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font for the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the mini-map */
+.mini-map {
+    width: 200px;
+    height: 200px;
+    background-color: #b0e57c;
+    border: 1px solid #000;
+    margin: 20px;
+}
+
+/* Style the menu buttons */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.menu button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the inventory */
+.inventory {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 20px;
+}
+
+/* Style the player images and names */
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+}
+
+.players img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.players p {
+    margin: 10px;
+}
+
+/* Style the chat */
+.chat {
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 20px;
+}
